@@ -1,0 +1,154 @@
+{
+    "os": "Linux-5.15.0-94-generic-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2024-02-27T04:26:00.480538",
+    "startedAt": "2024-02-27T04:25:59.605552",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "-m",
+        "zoedepth",
+        "-d",
+        "nyu",
+        "--pretrained_resource="
+    ],
+    "state": "running",
+    "program": "/home/zhefan/Desktop/depth_estimation/Depth-Anything/metric_depth/train_mono.py",
+    "codePathLocal": "train_mono.py",
+    "codePath": "metric_depth/train_mono.py",
+    "git": {
+        "remote": "https://github.com/Zhefan-Xu/Depth-Anything.git",
+        "commit": "04a0c3d8a6454cf043297da727c5bf032c332900"
+    },
+    "email": "zhefanx@andrew.cmu.edu",
+    "root": "/home/zhefan/Desktop/depth_estimation/Depth-Anything",
+    "host": "desktop",
+    "username": "zhefan",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 12,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 1326.2385,
+        "min": 800.0,
+        "max": 4660.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 872.477,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 2577.146,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 800.327,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 843.46,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 1679.472,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 893.209,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 819.449,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 851.138,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 1854.093,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 881.452,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 905.96,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 893.039,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 814.697,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 900.129,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 927.1,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 847.018,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 847.916,
+            "min": 800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 897.069,
+            "min": 800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 863.927,
+            "min": 800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 824.371,
+            "min": 800.0,
+            "max": 3600.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 445.2466583251953,
+            "used": 219.05618286132812
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3080",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3080",
+            "memory_total": 10737418240
+        }
+    ],
+    "memory": {
+        "total": 31.131031036376953
+    }
+}

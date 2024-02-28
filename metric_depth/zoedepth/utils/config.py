@@ -377,29 +377,40 @@ def get_config(model_name, mode='train', dataset=None, **overwrite_kwargs):
     if mode == "train":
         check_choices("Dataset", dataset, ["nyu", "kitti", "mix", None])
 
+    # 合并COMMON_CONFIG和COMMON_TRAINING_CONFIG
     config = flatten({**COMMON_CONFIG, **COMMON_TRAINING_CONFIG})
+    # print(config)
+    # 读取zoedepth/config_zoedepth.json
     config = update_model_config(config, mode, model_name)
+    # print(config)
 
+    # 如果是NYUdataset，这一步不改变什么
     # update with model version specific config
     version_name = overwrite_kwargs.get("version_name", config["version_name"])
     config = update_model_config(config, mode, model_name, version_name)
+    # print(config)
 
+    # 如果是NYUdataset，这一步不改变什么
     # update with config version if specified
     config_version = overwrite_kwargs.get("config_version", None)
     if config_version is not None:
         print("Overwriting config with config_version", config_version)
         config = update_model_config(config, mode, model_name, config_version)
-
+    # print(config)
     # update with overwrite_kwargs
     # Combined args are useful for hyperparameter search
+
+    #增加了model：zoedepth
     overwrite_kwargs = split_combined_args(overwrite_kwargs)
     config = {**config, **overwrite_kwargs}
+    
 
+    # 这一部没有做什么
     # Casting to bool   # TODO: Not necessary. Remove and test
     for key in KEYS_TYPE_BOOL:
         if key in config:
             config[key] = bool(config[key])
-
+    # print(config)
     # Model specific post processing of config
     parse_list(config, "n_attractors")
 
@@ -412,7 +423,7 @@ def get_config(model_name, mode='train', dataset=None, **overwrite_kwargs):
             conf['n_bins'] = n_bins
             new_bin_conf.append(conf)
         config['bin_conf'] = new_bin_conf
-
+    # 合并了DATASETS_CONFIG["nyu"]
     if mode == "train":
         orig_dataset = dataset
         if dataset == "mix":
@@ -420,11 +431,12 @@ def get_config(model_name, mode='train', dataset=None, **overwrite_kwargs):
         if dataset is not None:
             config['project'] = f"MonoDepth3-{orig_dataset}"  # Set project for wandb
 
+
     if dataset is not None:
         config['dataset'] = dataset
         config = {**DATASETS_CONFIG[dataset], **config}
         
-
+    # print(config)
     config['model'] = model_name
     typed_config = {k: infer_type(v) for k, v in config.items()}
     # add hostname to config

@@ -79,7 +79,7 @@ def load_ckpt(config, model, checkpoint_dir="./checkpoints", ckpt_type="best"):
     print("Loaded weights from {0}".format(checkpoint))
     return model
 
-
+# 训练会进入这个函数
 def main_worker(gpu, ngpus_per_node, config):
     try:
         seed = config.seed if 'seed' in config and config.seed else 43
@@ -125,12 +125,14 @@ if __name__ == '__main__':
         overwrite_kwargs["trainer"] = args.trainer
 
     config = get_config(args.model, "train", args.dataset, **overwrite_kwargs)
+    print(config)
     # git_commit()
     if config.use_shared_dict:
         shared_dict = mp.Manager().dict()
     else:
         shared_dict = None
     config.shared_dict = shared_dict
+    print(config)
 
     config.batch_size = config.bs
     config.mode = 'train'
@@ -151,7 +153,6 @@ if __name__ == '__main__':
         config.world_size = 1
         config.rank = 0
         nodes = ["127.0.0.1"]
-
     if config.distributed:
 
         print(config.rank)

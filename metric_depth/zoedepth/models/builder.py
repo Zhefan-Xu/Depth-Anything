@@ -36,8 +36,10 @@ def build_model(config) -> DepthModel:
         torch.nn.Module: Model corresponding to name and version as specified in config
     """
     module_name = f"zoedepth.models.{config.model}"
+    print("module name", module_name)
     try:
         module = import_module(module_name)
+        print("module: ", module)
     except ModuleNotFoundError as e:
         # print the original error message
         print(e)

@@ -23,3 +23,7 @@ config: {'dataset': 'nyu', 'avoid_boundary': False, 'min_depth': 0.001, 'max_dep
 2024-02-27 13:31:08,251 INFO    MainThread:1218551 [wandb_run.py:_redirect():2024] Wrapping output streams.
 2024-02-27 13:31:08,251 INFO    MainThread:1218551 [wandb_run.py:_redirect():2046] Redirects installed.
 2024-02-27 13:31:08,251 INFO    MainThread:1218551 [wandb_init.py:init():798] run started, returning control to user process
+2024-02-27 16:36:34,059 INFO    MainThread:1218551 [wandb_run.py:_finish():1844] finishing run zhefanx/MonoDepth3-nyu/2h2ql4l8
+2024-02-27 16:36:34,059 INFO    MainThread:1218551 [wandb_run.py:_atexit_cleanup():2070] got exitcode: 0
+2024-02-27 16:36:34,059 INFO    MainThread:1218551 [wandb_run.py:_restore():2053] restore
+2024-02-27 16:36:34,059 INFO    MainThread:1218551 [wandb_run.py:_restore():2059] restore done

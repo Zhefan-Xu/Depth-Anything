@@ -252,7 +252,7 @@ class ZoeDepth(DepthModel):
         
         core = DepthAnythingCore.build(midas_model_type=midas_model_type, use_pretrained_midas=use_pretrained_midas,
                                        train_midas=train_midas, fetch_features=True, freeze_bn=freeze_midas_bn, **kwargs)
-        
+        print("kwargs: ", kwargs)
         model = ZoeDepth(core, **kwargs)
         if pretrained_resource:
             assert isinstance(pretrained_resource, str), "pretrained_resource must be a string"

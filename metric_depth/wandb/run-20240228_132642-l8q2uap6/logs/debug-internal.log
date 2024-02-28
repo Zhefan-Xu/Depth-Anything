@@ -1,0 +1,105 @@
+2024-02-28 13:26:42,225 INFO    StreamThr :1414857 [internal.py:wandb_internal():87] W&B internal server running at pid: 1414857, started at: 2024-02-28 13:26:42.224095
+2024-02-28 13:26:42,227 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: status
+2024-02-28 13:26:42,235 INFO    WriterThread:1414857 [datastore.py:open_for_write():85] open: ./wandb/run-20240228_132642-l8q2uap6/run-l8q2uap6.wandb
+2024-02-28 13:26:42,236 DEBUG   SenderThread:1414857 [sender.py:send():334] send: header
+2024-02-28 13:26:42,286 DEBUG   SenderThread:1414857 [sender.py:send():334] send: run
+2024-02-28 13:26:42,544 INFO    SenderThread:1414857 [dir_watcher.py:__init__():216] watching files in: ./wandb/run-20240228_132642-l8q2uap6/files
+2024-02-28 13:26:42,544 INFO    SenderThread:1414857 [sender.py:_start_run_threads():1065] run started: l8q2uap6 with start time 1709144802.22311
+2024-02-28 13:26:42,554 DEBUG   SenderThread:1414857 [sender.py:send_request():361] send_request: summary_record
+2024-02-28 13:26:42,555 INFO    SenderThread:1414857 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2024-02-28 13:26:42,558 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: check_version
+2024-02-28 13:26:42,558 DEBUG   SenderThread:1414857 [sender.py:send_request():361] send_request: check_version
+2024-02-28 13:26:42,626 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: run_start
+2024-02-28 13:26:42,668 DEBUG   HandlerThread:1414857 [system_info.py:__init__():31] System info init
+2024-02-28 13:26:42,668 DEBUG   HandlerThread:1414857 [system_info.py:__init__():46] System info init done
+2024-02-28 13:26:42,668 INFO    HandlerThread:1414857 [system_monitor.py:start():151] Starting system monitor
+2024-02-28 13:26:42,668 INFO    SystemMonitor:1414857 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2024-02-28 13:26:42,670 INFO    HandlerThread:1414857 [system_monitor.py:probe():172] Collecting system info
+2024-02-28 13:26:42,670 INFO    SystemMonitor:1414857 [interfaces.py:start():168] Started cpu
+2024-02-28 13:26:42,671 INFO    SystemMonitor:1414857 [interfaces.py:start():168] Started disk
+2024-02-28 13:26:42,672 INFO    SystemMonitor:1414857 [interfaces.py:start():168] Started gpu
+2024-02-28 13:26:42,673 INFO    SystemMonitor:1414857 [interfaces.py:start():168] Started memory
+2024-02-28 13:26:42,674 INFO    SystemMonitor:1414857 [interfaces.py:start():168] Started network
+2024-02-28 13:26:43,274 DEBUG   HandlerThread:1414857 [system_info.py:probe():195] Probing system
+2024-02-28 13:26:43,280 DEBUG   HandlerThread:1414857 [system_info.py:_probe_git():180] Probing git
+2024-02-28 13:26:43,294 DEBUG   HandlerThread:1414857 [system_info.py:_probe_git():188] Probing git done
+2024-02-28 13:26:43,294 DEBUG   HandlerThread:1414857 [system_info.py:probe():241] Probing system done
+2024-02-28 13:26:43,294 DEBUG   HandlerThread:1414857 [system_monitor.py:probe():181] {'os': 'Linux-5.15.0-91-generic-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2024-02-28T18:26:43.274963', 'startedAt': '2024-02-28T18:26:42.215617', 'docker': None, 'cuda': None, 'args': ('-m', 'zoedepth', '-d', 'nyu'), 'state': 'running', 'program': '/home/zhefanx/Desktop/depth_estimation/Depth-Anything/metric_depth/train_mono.py', 'codePath': 'metric_depth/train_mono.py', 'git': {'remote': 'https://github.com/Zhefan-Xu/Depth-Anything.git', 'commit': 'c4426302887b279a7153215d98eca85ef168cc58'}, 'email': 'zhefanx@andrew.cmu.edu\\n', 'root': '/home/zhefanx/Desktop/depth_estimation/Depth-Anything', 'host': 'cerlab22', 'username': 'zhefanx', 'executable': '/usr/bin/python3', 'cpu_count': 24, 'cpu_count_logical': 32, 'cpu_freq': {'current': 1429.1038124999998, 'min': 800.0, 'max': 5050.0}, 'cpu_freq_per_core': [{'current': 1742.89, 'min': 800.0, 'max': 5800.0}, {'current': 1411.857, 'min': 800.0, 'max': 5800.0}, {'current': 1314.754, 'min': 800.0, 'max': 5800.0}, {'current': 1122.172, 'min': 800.0, 'max': 5800.0}, {'current': 954.336, 'min': 800.0, 'max': 5800.0}, {'current': 1026.321, 'min': 800.0, 'max': 5800.0}, {'current': 3323.198, 'min': 800.0, 'max': 5800.0}, {'current': 1067.077, 'min': 800.0, 'max': 5800.0}, {'current': 1216.106, 'min': 800.0, 'max': 5800.0}, {'current': 853.175, 'min': 800.0, 'max': 5800.0}, {'current': 1074.222, 'min': 800.0, 'max': 5800.0}, {'current': 1390.061, 'min': 800.0, 'max': 5800.0}, {'current': 1198.923, 'min': 800.0, 'max': 5800.0}, {'current': 1380.252, 'min': 800.0, 'max': 5800.0}, {'current': 1065.701, 'min': 800.0, 'max': 5800.0}, {'current': 977.293, 'min': 800.0, 'max': 5800.0}, {'current': 799.919, 'min': 800.0, 'max': 4300.0}, {'current': 935.782, 'min': 800.0, 'max': 4300.0}, {'current': 1016.125, 'min': 800.0, 'max': 4300.0}, {'current': 916.051, 'min': 800.0, 'max': 4300.0}, {'current': 799.2, 'min': 800.0, 'max': 4300.0}, {'current': 927.662, 'min': 800.0, 'max': 4300.0}, {'current': 926.102, 'min': 800.0, 'max': 4300.0}, {'current': 928.312, 'min': 800.0, 'max': 4300.0}, {'current': 800.216, 'min': 800.0, 'max': 4300.0}, {'current': 922.082, 'min': 800.0, 'max': 4300.0}, {'current': 1011.954, 'min': 800.0, 'max': 4300.0}, {'current': 921.032, 'min': 800.0, 'max': 4300.0}, {'current': 798.463, 'min': 800.0, 'max': 4300.0}, {'current': 920.223, 'min': 800.0, 'max': 4300.0}, {'current': 922.416, 'min': 800.0, 'max': 4300.0}, {'current': 1087.742, 'min': 800.0, 'max': 4300.0}], 'disk': {'total': 960.1599197387695, 'used': 86.05470275878906}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 62.5477294921875}}
+2024-02-28 13:26:43,295 INFO    HandlerThread:1414857 [system_monitor.py:probe():182] Finished collecting system info
+2024-02-28 13:26:43,295 INFO    HandlerThread:1414857 [system_monitor.py:probe():185] Publishing system info
+2024-02-28 13:26:43,295 DEBUG   HandlerThread:1414857 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2024-02-28 13:26:43,295 DEBUG   HandlerThread:1414857 [system_info.py:_save_pip():67] Saving pip packages done
+2024-02-28 13:26:43,296 INFO    HandlerThread:1414857 [system_monitor.py:probe():187] Finished publishing system info
+2024-02-28 13:26:43,300 DEBUG   SenderThread:1414857 [sender.py:send():334] send: files
+2024-02-28 13:26:43,300 INFO    SenderThread:1414857 [sender.py:_save_file():1319] saving file wandb-metadata.json with policy now
+2024-02-28 13:26:43,303 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-28 13:26:43,303 DEBUG   SenderThread:1414857 [sender.py:send_request():361] send_request: stop_status
+2024-02-28 13:26:43,304 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-28 13:26:43,493 DEBUG   SenderThread:1414857 [sender.py:send():334] send: telemetry
+2024-02-28 13:26:43,544 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20240228_132642-l8q2uap6/files/requirements.txt
+2024-02-28 13:26:43,544 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20240228_132642-l8q2uap6/files/wandb-metadata.json
+2024-02-28 13:26:43,544 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20240228_132642-l8q2uap6/files/wandb-summary.json
+2024-02-28 13:26:43,649 INFO    Thread-16 :1414857 [upload_job.py:push():143] Uploaded file /tmp/tmpcqr8hd4pwandb/9z3maklc-wandb-metadata.json
+2024-02-28 13:26:47,495 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: status_report
+2024-02-28 13:26:52,496 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: status_report
+2024-02-28 13:26:57,496 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: status_report
+2024-02-28 13:26:58,303 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: keepalive
+2024-02-28 13:27:02,497 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: status_report
+2024-02-28 13:27:03,304 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: keepalive
+2024-02-28 13:27:03,548 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20240228_132642-l8q2uap6/files/output.log
+2024-02-28 13:27:05,549 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20240228_132642-l8q2uap6/files/output.log
+2024-02-28 13:27:07,227 DEBUG   SenderThread:1414857 [sender.py:send():334] send: files
+2024-02-28 13:27:07,228 INFO    SenderThread:1414857 [sender.py:_save_file():1319] saving file media/images/TrainPredictions_0_1aed36246336a1287312.png with policy now
+2024-02-28 13:27:07,232 DEBUG   SenderThread:1414857 [sender.py:send():334] send: files
+2024-02-28 13:27:07,232 INFO    SenderThread:1414857 [sender.py:_save_file():1319] saving file media/images/TrainPredictions_0_360a7fc93ae41c6f62c5.png with policy now
+2024-02-28 13:27:07,237 DEBUG   SenderThread:1414857 [sender.py:send():334] send: files
+2024-02-28 13:27:07,237 INFO    SenderThread:1414857 [sender.py:_save_file():1319] saving file media/images/TrainPredictions_0_89cf0a0e18374ec36228.png with policy now
+2024-02-28 13:27:07,257 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-28 13:27:07,258 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-28 13:27:07,550 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20240228_132642-l8q2uap6/files/media/images/TrainPredictions_0_360a7fc93ae41c6f62c5.png
+2024-02-28 13:27:07,550 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20240228_132642-l8q2uap6/files/media/images/TrainPredictions_0_89cf0a0e18374ec36228.png
+2024-02-28 13:27:07,550 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20240228_132642-l8q2uap6/files/media/images/TrainPredictions_0_1aed36246336a1287312.png
+2024-02-28 13:27:07,550 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20240228_132642-l8q2uap6/files/media
+2024-02-28 13:27:07,550 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20240228_132642-l8q2uap6/files/media/images
+2024-02-28 13:27:07,600 INFO    Thread-18 :1414857 [upload_job.py:push():143] Uploaded file /tmp/tmpcqr8hd4pwandb/bjkjaf4z-media/images/TrainPredictions_0_360a7fc93ae41c6f62c5.png
+2024-02-28 13:27:07,636 INFO    Thread-19 :1414857 [upload_job.py:push():143] Uploaded file /tmp/tmpcqr8hd4pwandb/nugxwrts-media/images/TrainPredictions_0_89cf0a0e18374ec36228.png
+2024-02-28 13:27:07,638 INFO    Thread-17 :1414857 [upload_job.py:push():143] Uploaded file /tmp/tmpcqr8hd4pwandb/jczerdo2-media/images/TrainPredictions_0_1aed36246336a1287312.png
+2024-02-28 13:27:08,085 INFO    Thread-20 :1414857 [upload_job.py:push():143] Uploaded file /tmp/tmpcqr8hd4pwandb/q8um8icv-media/images/TrainPredictions_0_360a7fc93ae41c6f62c5.png
+2024-02-28 13:27:08,112 INFO    Thread-21 :1414857 [upload_job.py:push():143] Uploaded file /tmp/tmpcqr8hd4pwandb/1ba2rsnq-media/images/TrainPredictions_0_89cf0a0e18374ec36228.png
+2024-02-28 13:27:08,117 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: status_report
+2024-02-28 13:27:08,137 INFO    Thread-22 :1414857 [upload_job.py:push():143] Uploaded file /tmp/tmpcqr8hd4pwandb/oswwivb3-media/images/TrainPredictions_0_1aed36246336a1287312.png
+2024-02-28 13:27:08,305 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: keepalive
+2024-02-28 13:27:09,550 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20240228_132642-l8q2uap6/files/output.log
+2024-02-28 13:27:11,551 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20240228_132642-l8q2uap6/files/output.log
+2024-02-28 13:27:13,293 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: status_report
+2024-02-28 13:27:13,306 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: keepalive
+2024-02-28 13:27:13,552 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20240228_132642-l8q2uap6/files/output.log
+2024-02-28 13:27:13,552 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20240228_132642-l8q2uap6/files/config.yaml
+2024-02-28 13:27:15,552 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20240228_132642-l8q2uap6/files/output.log
+2024-02-28 13:27:17,553 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20240228_132642-l8q2uap6/files/output.log
+2024-02-28 13:27:18,307 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: keepalive
+2024-02-28 13:27:18,460 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: status_report
+2024-02-28 13:27:19,554 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20240228_132642-l8q2uap6/files/output.log
+2024-02-28 13:27:19,583 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-28 13:27:19,584 DEBUG   SenderThread:1414857 [sender.py:send():334] send: history
+2024-02-28 13:27:19,584 DEBUG   SenderThread:1414857 [sender.py:send_request():361] send_request: summary_record
+2024-02-28 13:27:19,585 INFO    SenderThread:1414857 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2024-02-28 13:27:20,554 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20240228_132642-l8q2uap6/files/wandb-summary.json
+2024-02-28 13:27:21,554 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20240228_132642-l8q2uap6/files/output.log
+2024-02-28 13:27:23,308 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: keepalive
+2024-02-28 13:27:23,555 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20240228_132642-l8q2uap6/files/output.log
+2024-02-28 13:27:23,635 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: status_report
+2024-02-28 13:27:25,556 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20240228_132642-l8q2uap6/files/output.log
+2024-02-28 13:27:27,556 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20240228_132642-l8q2uap6/files/output.log
+2024-02-28 13:27:28,310 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: keepalive
+2024-02-28 13:27:28,813 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: status_report
+2024-02-28 13:27:29,557 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20240228_132642-l8q2uap6/files/output.log
+2024-02-28 13:27:30,842 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: partial_history
+2024-02-28 13:27:30,843 DEBUG   SenderThread:1414857 [sender.py:send():334] send: history
+2024-02-28 13:27:30,844 DEBUG   SenderThread:1414857 [sender.py:send_request():361] send_request: summary_record
+2024-02-28 13:27:30,844 INFO    SenderThread:1414857 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2024-02-28 13:27:31,557 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20240228_132642-l8q2uap6/files/output.log
+2024-02-28 13:27:31,558 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20240228_132642-l8q2uap6/files/wandb-summary.json
+2024-02-28 13:27:33,311 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: keepalive
+2024-02-28 13:27:33,558 INFO    Thread-13 :1414857 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20240228_132642-l8q2uap6/files/output.log
+2024-02-28 13:27:34,003 DEBUG   HandlerThread:1414857 [handler.py:handle_request():144] handle_request: status_report

@@ -1,0 +1,32 @@
+2024-02-28 13:19:48,730 INFO    MainThread:1411572 [wandb_setup.py:_flush():68] Configure stats pid to 1411572
+2024-02-28 13:19:48,730 INFO    MainThread:1411572 [wandb_setup.py:_flush():68] Loading settings from /home/zhefanx/.config/wandb/settings
+2024-02-28 13:19:48,730 INFO    MainThread:1411572 [wandb_setup.py:_flush():68] Loading settings from /home/zhefanx/Desktop/depth_estimation/Depth-Anything/metric_depth/wandb/settings
+2024-02-28 13:19:48,730 INFO    MainThread:1411572 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'start_method': 'thread', '_require_service': 'True'}
+2024-02-28 13:19:48,730 INFO    MainThread:1411572 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'metric_depth/train_mono.py', 'program': '/home/zhefanx/Desktop/depth_estimation/Depth-Anything/metric_depth/train_mono.py'}
+2024-02-28 13:19:48,730 INFO    MainThread:1411572 [wandb_init.py:_log_setup():478] Logging user logs to ./wandb/run-20240228_131948-l7t4ijwb/logs/debug.log
+2024-02-28 13:19:48,730 INFO    MainThread:1411572 [wandb_init.py:_log_setup():479] Logging internal logs to ./wandb/run-20240228_131948-l7t4ijwb/logs/debug-internal.log
+2024-02-28 13:19:48,731 INFO    MainThread:1411572 [wandb_init.py:init():518] calling init triggers
+2024-02-28 13:19:48,731 INFO    MainThread:1411572 [wandb_init.py:init():521] wandb.init called with sweep_config: {}
+config: {'dataset': 'nyu', 'avoid_boundary': False, 'min_depth': 0.001, 'max_depth': 10, 'data_path': './data/nyu/sync', 'gt_path': './data/nyu/sync', 'filenames_file': './train_test_inputs/nyudepthv2_train_files_with_gt.txt', 'input_height': 480, 'input_width': 640, 'data_path_eval': './data/nyu/dataset/nyu_depth_v2/official_splits/test', 'gt_path_eval': './data/nyu/dataset/nyu_depth_v2/official_splits/test', 'filenames_file_eval': './train_test_inputs/nyudepthv2_test_files_with_gt.txt', 'min_depth_eval': 0.001, 'max_depth_eval': 10, 'min_depth_diff': -10, 'max_depth_diff': 10, 'do_random_rotate': True, 'degree': 1.0, 'do_kb_crop': False, 'garg_crop': False, 'eigen_crop': True, 'save_dir': './depth_anything_finetune', 'project': 'MonoDepth3-nyu', 'tags': '', 'notes': '', 'gpu': 0, 'root': '.', 'uid': '3be62ad91daa', 'print_losses': False, 'distributed': True, 'workers': 16, 'clip_grad': 0.1, 'use_shared_dict': False, 'shared_dict': None, 'use_amp': False, 'aug': True, 'random_crop': False, 'random_translate': False, 'translate_prob': 0.2, 'max_translation': 100, 'validate_every': 0.25, 'log_images_every': 0.1, 'prefetch': False, 'name': 'ZoeDepth', 'version_name': 'v1', 'n_bins': 64, 'bin_embedding_dim': 128, 'bin_centers_type': 'softplus', 'n_attractors': [16, 8, 4, 1], 'attractor_alpha': 1000, 'attractor_gamma': 2, 'attractor_kind': 'mean', 'attractor_type': 'inv', 'midas_model_type': 'DPT_BEiT_L_384', 'min_temp': 0.0212, 'max_temp': 50.0, 'output_distribution': 'logbinomial', 'memory_efficient': True, 'inverse_midas': False, 'img_size': [392, 518], 'train_midas': True, 'use_pretrained_midas': True, 'trainer': 'zoedepth', 'epochs': 5, 'bs': 16, 'lr': 0.000161, 'wd': 0.01, 'div_factor': 1, 'final_div_factor': 10000, 'pct_start': 0.7, 'three_phase': False, 'cycle_momentum': True, 'same_lr': False, 'w_si': 1, 'w_domain': 0.2, 'w_reg': 0, 'w_grad': 0, 'midas_lr_factor': 50, 'encoder_lr_factor': 50, 'pos_enc_lr_factor': 50, 'freeze_midas_bn': True, 'model': 'zoedepth', 'batch_size': 16, 'mode': 'train', 'world_size': 1, 'rank': 0, 'dist_url': 'tcp://127.0.0.1:15020', 'dist_backend': 'nccl', 'num_workers': 16, 'ngpus_per_node': 1, 'multigpu': True, 'total_params': '25.26M', 'run_id': '28-Feb_13-19-3be62ad91daa', 'experiment_id': 'ZoeDepthv1_28-Feb_13-19-3be62ad91daa'}
+2024-02-28 13:19:48,731 INFO    MainThread:1411572 [wandb_init.py:init():571] starting backend
+2024-02-28 13:19:48,731 INFO    MainThread:1411572 [wandb_init.py:init():575] setting up manager
+2024-02-28 13:19:48,732 INFO    MainThread:1411572 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: fork
+2024-02-28 13:19:48,734 INFO    MainThread:1411572 [wandb_init.py:init():582] backend started and connected
+2024-02-28 13:19:48,745 INFO    MainThread:1411572 [wandb_init.py:init():670] updated telemetry
+2024-02-28 13:19:48,788 INFO    MainThread:1411572 [wandb_init.py:init():710] communicating run to backend with 60.0 second timeout
+2024-02-28 13:19:49,096 INFO    MainThread:1411572 [wandb_run.py:_on_init():2121] communicating current version
+2024-02-28 13:19:49,170 INFO    MainThread:1411572 [wandb_run.py:_on_init():2125] got version response upgrade_message: "wandb version 0.16.3 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-02-28 13:19:49,171 INFO    MainThread:1411572 [wandb_init.py:init():758] starting run threads in backend
+2024-02-28 13:19:49,848 INFO    MainThread:1411572 [wandb_run.py:_console_start():2101] atexit reg
+2024-02-28 13:19:49,848 INFO    MainThread:1411572 [wandb_run.py:_redirect():1959] redirect: SettingsConsole.WRAP_RAW
+2024-02-28 13:19:49,848 INFO    MainThread:1411572 [wandb_run.py:_redirect():2024] Wrapping output streams.
+2024-02-28 13:19:49,848 INFO    MainThread:1411572 [wandb_run.py:_redirect():2046] Redirects installed.
+2024-02-28 13:19:49,849 INFO    MainThread:1411572 [wandb_init.py:init():798] run started, returning control to user process
+2024-02-28 13:19:52,852 INFO    MainThread:1411572 [wandb_run.py:_finish():1844] finishing run zhefanx/MonoDepth3-nyu/l7t4ijwb
+2024-02-28 13:19:52,852 INFO    MainThread:1411572 [wandb_run.py:_atexit_cleanup():2070] got exitcode: 0
+2024-02-28 13:19:52,852 INFO    MainThread:1411572 [wandb_run.py:_restore():2053] restore
+2024-02-28 13:19:52,852 INFO    MainThread:1411572 [wandb_run.py:_restore():2059] restore done
+2024-02-28 13:19:55,827 INFO    MainThread:1411572 [wandb_run.py:_footer_history_summary_info():3427] rendering history
+2024-02-28 13:19:55,827 INFO    MainThread:1411572 [wandb_run.py:_footer_history_summary_info():3459] rendering summary
+2024-02-28 13:19:55,831 INFO    MainThread:1411572 [wandb_run.py:_footer_sync_info():3383] logging synced files

@@ -1,0 +1,211 @@
+{
+    "os": "Linux-5.15.0-91-generic-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2024-02-27T21:42:31.379230",
+    "startedAt": "2024-02-27T21:42:30.217084",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "-m",
+        "zoedepth",
+        "-d",
+        "nyu",
+        "--pretrained_resource="
+    ],
+    "state": "running",
+    "program": "/home/zhefanx/Desktop/depth_estimation/Depth-Anything/metric_depth/train_mono.py",
+    "codePath": "metric_depth/train_mono.py",
+    "git": {
+        "remote": "https://github.com/Zhefan-Xu/Depth-Anything.git",
+        "commit": "c4426302887b279a7153215d98eca85ef168cc58"
+    },
+    "email": "zhefanx@andrew.cmu.edu\\n",
+    "root": "/home/zhefanx/Desktop/depth_estimation/Depth-Anything",
+    "host": "cerlab22",
+    "username": "zhefanx",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 24,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 1473.0925312499996,
+        "min": 800.0,
+        "max": 5050.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2846.689,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 1493.158,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 2461.245,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 1111.991,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 1760.524,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 2587.419,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 1967.033,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 1278.612,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 3935.759,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 934.724,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 1000.844,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 834.403,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 1060.61,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 851.716,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 1182.616,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 1067.391,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 1035.215,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 898.69,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 995.191,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 1144.837,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 1035.674,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 830.303,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 833.333,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 831.708,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 799.914,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 832.038,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 937.339,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 940.874,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 799.941,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 893.261,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 887.878,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 1013.96,
+            "min": 800.0,
+            "max": 4300.0
+        }
+    ],
+    "disk": {
+        "total": 960.1599197387695,
+        "used": 86.0410041809082
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 62.5477294921875
+    }
+}

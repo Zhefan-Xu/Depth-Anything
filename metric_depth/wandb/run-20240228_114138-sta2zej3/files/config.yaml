@@ -1,0 +1,318 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.9
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.8.10
+    start_time: 1709138498.182494
+    t:
+      1:
+      - 1
+      - 41
+      - 55
+      2:
+      - 1
+      - 41
+      - 55
+      3:
+      - 2
+      - 13
+      - 16
+      - 23
+      4: 3.8.10
+      5: 0.13.9
+      8:
+      - 6
+      - 9
+attractor_alpha:
+  desc: null
+  value: 1000
+attractor_gamma:
+  desc: null
+  value: 2
+attractor_kind:
+  desc: null
+  value: mean
+attractor_type:
+  desc: null
+  value: inv
+aug:
+  desc: null
+  value: true
+avoid_boundary:
+  desc: null
+  value: false
+batch_size:
+  desc: null
+  value: 1
+bin_centers_type:
+  desc: null
+  value: softplus
+bin_embedding_dim:
+  desc: null
+  value: 128
+bs:
+  desc: null
+  value: 1
+clip_grad:
+  desc: null
+  value: 0.1
+cycle_momentum:
+  desc: null
+  value: true
+data_path:
+  desc: null
+  value: ./data/nyu/sync
+data_path_eval:
+  desc: null
+  value: ./data/nyu/dataset/nyu_depth_v2/official_splits/test
+dataset:
+  desc: null
+  value: nyu
+degree:
+  desc: null
+  value: 1.0
+dist_backend:
+  desc: null
+  value: nccl
+dist_url:
+  desc: null
+  value: tcp://127.0.0.1:15005
+distributed:
+  desc: null
+  value: true
+div_factor:
+  desc: null
+  value: 1
+do_kb_crop:
+  desc: null
+  value: false
+do_random_rotate:
+  desc: null
+  value: true
+eigen_crop:
+  desc: null
+  value: true
+encoder_lr_factor:
+  desc: null
+  value: 50
+epochs:
+  desc: null
+  value: 5
+experiment_id:
+  desc: null
+  value: ZoeDepthv1_28-Feb_11-41-ec0ba72c75af
+filenames_file:
+  desc: null
+  value: ./train_test_inputs/nyudepthv2_train_files_with_gt.txt
+filenames_file_eval:
+  desc: null
+  value: ./train_test_inputs/nyudepthv2_test_files_with_gt.txt
+final_div_factor:
+  desc: null
+  value: 10000
+freeze_midas_bn:
+  desc: null
+  value: true
+garg_crop:
+  desc: null
+  value: false
+gpu:
+  desc: null
+  value: 0
+gt_path:
+  desc: null
+  value: ./data/nyu/sync
+gt_path_eval:
+  desc: null
+  value: ./data/nyu/dataset/nyu_depth_v2/official_splits/test
+img_size:
+  desc: null
+  value:
+  - 392
+  - 518
+input_height:
+  desc: null
+  value: 480
+input_width:
+  desc: null
+  value: 640
+inverse_midas:
+  desc: null
+  value: false
+log_images_every:
+  desc: null
+  value: 0.1
+lr:
+  desc: null
+  value: 0.000161
+max_depth:
+  desc: null
+  value: 10
+max_depth_diff:
+  desc: null
+  value: 10
+max_depth_eval:
+  desc: null
+  value: 10
+max_temp:
+  desc: null
+  value: 50.0
+max_translation:
+  desc: null
+  value: 100
+memory_efficient:
+  desc: null
+  value: true
+midas_lr_factor:
+  desc: null
+  value: 50
+midas_model_type:
+  desc: null
+  value: DPT_BEiT_L_384
+min_depth:
+  desc: null
+  value: 0.001
+min_depth_diff:
+  desc: null
+  value: -10
+min_depth_eval:
+  desc: null
+  value: 0.001
+min_temp:
+  desc: null
+  value: 0.0212
+mode:
+  desc: null
+  value: train
+model:
+  desc: null
+  value: zoedepth
+multigpu:
+  desc: null
+  value: true
+n_attractors:
+  desc: null
+  value:
+  - 16
+  - 8
+  - 4
+  - 1
+n_bins:
+  desc: null
+  value: 64
+name:
+  desc: null
+  value: ZoeDepth
+ngpus_per_node:
+  desc: null
+  value: 1
+notes:
+  desc: null
+  value: ''
+num_workers:
+  desc: null
+  value: 16
+output_distribution:
+  desc: null
+  value: logbinomial
+pct_start:
+  desc: null
+  value: 0.7
+pos_enc_lr_factor:
+  desc: null
+  value: 50
+prefetch:
+  desc: null
+  value: false
+print_losses:
+  desc: null
+  value: false
+project:
+  desc: null
+  value: MonoDepth3-nyu
+random_crop:
+  desc: null
+  value: false
+random_translate:
+  desc: null
+  value: false
+rank:
+  desc: null
+  value: 0
+root:
+  desc: null
+  value: .
+run_id:
+  desc: null
+  value: 28-Feb_11-41-ec0ba72c75af
+same_lr:
+  desc: null
+  value: false
+save_dir:
+  desc: null
+  value: ./depth_anything_finetune
+shared_dict:
+  desc: null
+  value: null
+tags:
+  desc: null
+  value: ''
+three_phase:
+  desc: null
+  value: false
+total_params:
+  desc: null
+  value: 335.79M
+train_midas:
+  desc: null
+  value: true
+trainer:
+  desc: null
+  value: zoedepth
+translate_prob:
+  desc: null
+  value: 0.2
+uid:
+  desc: null
+  value: ec0ba72c75af
+use_amp:
+  desc: null
+  value: false
+use_pretrained_midas:
+  desc: null
+  value: true
+use_shared_dict:
+  desc: null
+  value: false
+validate_every:
+  desc: null
+  value: 0.25
+version_name:
+  desc: null
+  value: v1
+w_domain:
+  desc: null
+  value: 0.2
+w_grad:
+  desc: null
+  value: 0
+w_reg:
+  desc: null
+  value: 0
+w_si:
+  desc: null
+  value: 1
+wd:
+  desc: null
+  value: 0.01
+workers:
+  desc: null
+  value: 16
+world_size:
+  desc: null
+  value: 1

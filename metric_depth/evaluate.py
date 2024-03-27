@@ -35,7 +35,7 @@ from zoedepth.utils.arg_utils import parse_unknown
 from zoedepth.utils.config import change_dataset, get_config, ALL_EVAL_DATASETS, ALL_INDOOR, ALL_OUTDOOR
 from zoedepth.utils.misc import (RunningAverageDict, colors, compute_metrics,
                         count_parameters)
-
+import numpy as np
 
 @torch.no_grad()
 def infer(model, images, **kwargs):
@@ -77,7 +77,12 @@ def evaluate(model, test_loader, config, round_vals=True, round_precision=3):
         depth = depth.squeeze().unsqueeze(0).unsqueeze(0)
         focal = sample.get('focal', torch.Tensor(
             [715.0873]).cuda())  # This magic number (focal) is only used for evaluating BTS model
+        # print(sample["focal", torch.Tensor([715.0873])])
         pred = infer(model, image, dataset=sample['dataset'][0], focal=focal)
+        pred_numpy = pred.cpu().numpy()
+        min_depth = np.min(pred_numpy)
+        max_depth = np.max(pred_numpy)
+        print("min/max depth: %s %s" % (min_depth, max_depth))        
 
         # Save image, depth, pred for visualization
         if "save_images" in config and config.save_images:

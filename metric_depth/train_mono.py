@@ -79,7 +79,6 @@ def load_ckpt(config, model, checkpoint_dir="./checkpoints", ckpt_type="best"):
     print("Loaded weights from {0}".format(checkpoint))
     return model
 
-# 训练会进入这个函数
 def main_worker(gpu, ngpus_per_node, config):
     try:
         seed = config.seed if 'seed' in config and config.seed else 43
